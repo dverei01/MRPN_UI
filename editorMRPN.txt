@@ -1,0 +1,8 @@
+places: {}
+transitions: {}
+tokens: {
+}
+bonds : {
+}
+arcs : {
+}

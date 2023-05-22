@@ -1,0 +1,27 @@
+places: {p1, p2, p3, }
+transitions: {t1, t2, t3, }
+tokens: {
+  B in p2,
+  C in p2,
+  A in p2,
+}
+bonds : {
+  A - B,
+  B - A,
+  B - C,
+  C - B,
+}
+arcs : {
+  p1 -> t1 {[A] },
+  t3 -> p1 {[(null-null), (null-null)] },
+  p2 -> t2 {[A, B] },
+  t1 -> p2 {[null] },
+  p3 -> t3 {[B, (null-null), C, A] },
+  t2 -> p3 {[(null-null)] },
+  p1 -> t1 {[A] },
+  t1 -> p2 {[null] },
+  p2 -> t2 {[A, B] },
+  t2 -> p3 {[(null-null)] },
+  t3 -> p1 {[(null-null), (null-null)] },
+  p3 -> t3 {[B, (null-null), C, A] },
+}
